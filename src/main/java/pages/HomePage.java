@@ -46,11 +46,6 @@ public class HomePage {
         element.sendKeys(text);
     }
 
-//   protected void refreshPage() {
-//       driver.navigate().refresh();
-//       waitForPageLoad();
-//   }
-
    protected void waitForPageLoad() {
        wait.until(ExpectedConditions.jsReturnsValue("return document.readyState === 'complete'"));
    }
